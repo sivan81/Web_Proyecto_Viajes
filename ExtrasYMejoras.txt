@@ -1,0 +1,15 @@
+//EXPLICACIÓN DE EXTRAS Y MEJORAS EN UN DOCUMENTO DE TEXTO COMO PIDE LA ENTREGA//
+
+* Se ha decidido por claridad y legibilidad, separar los estilos por secciones, así podremos encontrar los estilos de cada sección en su fichero correspondiente: menu.css, inicio.css, boton_flotante.css, nosotros.css, lugares.css, descuibre.css, footer.css) y un fichero con los estilos generales style.css
+
+* Se ha decidido separar todas las funcionalidades javascript en ficheros diferentes que agrupan el funcionamiento necesario de cada sección que lo necesita: carrusel.js, menu.js y lugares.js
+
+* Se añade en la sección del slider (descubre) una botonera para controlar el slider. Por defecto se inicia ejecutándose automáticamente, pero el usuario puede pausar la reproducción y navegar de forma circular a la siguiente o a la anterior usando los botones para ello. En el index.html se encuentra a partir de la linea 106, un div que contiene los botones, y su funcionalidad en javascript está en el fichero carrusel.js
+
+* Se hace que se cierre el menú al pulsar en alguno de los items. El menú que se muestra para resoluciones de menos de 768 muestra un listado de las secciones y es navegable, pues una vez que se hace click en un item, el menú se cierra dejando a la vista la sección a la que se ha navegado. Esto es al añadir la llamada a la función ´hideNav´en el onclick de cada item, lineas 31 a la 36 del index.html
+
+* La sección de lugares mostraba una serie de fotos de lugares con su puntuación, precio y nombre. Se añade una mejora para que al hacer click en cada una se muestre una ventana modal (muy sencilla) que muestra una breve descripción y un enlace externo a otra web que se abrirá en una pestaña nueva del navegador, donde el usuario puede informarse mejor sobre la localidad. Todo esto esta implementado en el index.html a partir de la linea 168, donde estan los divs con cada modal que inicialmente se encuentran ocultos (definido en lugares.css a partir de la linea 54), y que al pulsar sobre cada elemento desencadena una llamada a la función showDetalleLugar (lugares.js) que recibe el id del elemento a mostrar y sencillamente aplica el display block. Cada ventana modal tiene un botón de cierre, que al ser pulsado desencadena una llamada a la función hideDetalleLugar (lugares.js) que recibe el id del elemento a mostrar y aplica el display:none.
+
+* Las imágenes de la sección nosotros se han alineado y se muestran del mismo tamaño, para evitar ruido visual y más organización.
+
+* Se ha añadido un leve borde al menú que se muestra en los dispositivos de resolución inferior a 768.  (menu.css a partir de la linea 89).

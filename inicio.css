@@ -1,0 +1,48 @@
+/*Estilos para sección inicio*/
+
+.inicio {
+    background-image: url(img/playa.jpg);
+    background-repeat: no-repeat;
+    min-height: 534px;
+    background-size: cover;
+    background-position-x: center;
+}
+.inicio .contenido {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    margin-left: 10px;
+    margin-top: 130px;
+}
+
+.inicio .contenido .boton {
+    margin-top: 24px;
+}
+
+.inicio .contenido .boton a{
+    color: white;
+    text-decoration: none;
+}
+
+.font2 {
+    font-size: 2vw;
+}
+
+.font7 {
+    font-size: 7vw;
+    line-height: 150%;
+}
+
+@media screen and (min-width: 768px){
+
+    .inicio .contenido {
+        margin-left: 0px;
+        padding-left: 10%;
+    }
+
+    .inicio .contenido .boton {
+        margin-bottom: 10%;
+        font-size: 2vw;
+        width: 13vw;
+    }
+}

@@ -1,0 +1,32 @@
+/*Footer*/
+
+footer {
+    display: flex;
+    gap: 40%;
+    padding: 20px;
+}
+
+footer a {
+    text-decoration: none;
+    color: grey;
+}
+
+footer .footer-seccion {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    color: #095555;
+    font-size: 14px;
+}
+
+.titulo-footer {
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+@media screen and (min-width: 768px){
+    footer {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+}

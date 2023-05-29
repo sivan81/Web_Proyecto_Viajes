@@ -1,0 +1,28 @@
+/*Boton flotante*/
+.float{
+    display: none;
+    position: fixed;
+    width: 24px;
+    height: 24px;
+    bottom: 40px;
+    right: 40px;
+    background-color: #095555;
+    border-radius: 50px;
+    text-align: center;
+    box-shadow: 2px 2px 3px #999;
+    z-index: 1;
+}
+
+.float img {
+    filter: invert(100%) sepia(0%) saturate(7468%) hue-rotate(112deg) brightness(111%) contrast(100%);
+}
+
+.show {
+    display: block;
+}
+
+@media screen and (min-width: 768px){
+    .show {
+        display: none;
+    }
+}

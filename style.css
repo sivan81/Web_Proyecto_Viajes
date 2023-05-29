@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;600&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/*Estilos generales*/
+article {
+    padding-top: 52px;
+}
+
+.clikable {
+    cursor: pointer;
+}
+
+.boton {
+    background-color: #095555;
+    width: 120px;
+    text-align: center;
+    color: white;
+    padding: 9px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.titulo {
+    color: #095555;
+    text-align: center;
+    font-size: 18px;
+}
+
+@media screen and (min-width: 768px){
+    header {
+        font-size: 18px;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    header .right {
+        width: 70%;
+    }
+
+    header .right .items {
+        display: flex;
+    }
+
+    header .right .open-menu {
+        display: none;
+    }
+
+    .inicio .contenido {
+        margin-left: 0px;
+        padding-left: 10%;
+    }
+
+    .inicio .contenido .boton {
+        margin-bottom: 10%;
+    }
+
+    .nosotros {
+        flex-direction: row;
+        padding-left: 10%;
+        padding-right: 10%;
+        gap: 29px;
+        position: relative;
+    }
+
+    .nosotros .seccion1 {
+        width: 50%;
+        align-items: flex-start;
+        gap: 30px;
+    }
+
+    .nosotros .seccion1 .titulo {
+        text-align: left;
+    }
+
+    .nosotros .descripcion {
+        text-align: left;
+        padding: 0px;
+        font-size: 1vw;
+    }
+
+    .nosotros .fotos {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        position: absolute;
+        top: 54px;
+        bottom: 0;
+        left: 56%;
+    }
+
+    .nosotros .fotos img {
+        width: auto;
+        height: 100%;
+    }
+
+    .titulo {
+        font-size: 2vw;
+    }
+
+    .destino {
+        width: 18vw;
+        height: 42vh;
+        padding-bottom: 48%;
+    }
+
+    .destino .data {
+        font-size: 2vw;
+        display: flex;
+        align-items: center;
+        gap: 11%;
+        right: 10%;
+    }
+
+    .destino .data img {
+        width: 33% !important;
+        height: 33%;
+    }
+
+    .nombre {
+        bottom: 20%;
+        left: 12%;
+    }
+
+    .data.precio {
+        bottom: 10%;
+        left: 12%;
+        font-size: 1.5vw;
+    }
+
+    .lugares .fotos {
+        width: calc(54vw + 48px);
+    }
+
+    .lugares .fotos img {
+        width: calc(18vw - 16px);
+    }
+
+    footer {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+
+}
+
+

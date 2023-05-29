@@ -1,0 +1,43 @@
+/*Estilos para sección descubre*/
+
+.slider {
+    width: 90%;
+    height: 400px;
+    margin: 1em auto;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.foto {
+    display: none;
+    max-width: 200px;
+    max-height: 350px;
+}
+
+.foto img {
+    width: 100%
+}
+
+.foto .texto {
+    position: relative;
+    bottom: 2em;
+    text-align: center;
+    color: black;
+    font-size: 1.5em;
+    background-color: white;
+}
+
+.control {
+    display: flex;
+    justify-content: center;
+    padding: 12px;
+}
+
+.control img {
+    filter: invert(24%) sepia(73%) saturate(471%) hue-rotate(131deg) brightness(97%) contrast(99%);
+}
+
+.control-hide{
+    display: none;
+}

@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="boton_flotante.css">
+    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="inicio.css">
+    <link rel="stylesheet" href="nosotros.css">
+    <link rel="stylesheet" href="descubre.css">
+    <link rel="stylesheet" href="lugares.css">
+    <link rel="stylesheet" href="footer.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viajes Molones</title>
+</head>
+
+<body>
+
+    <main>
+        <!--Barra menú-->
+        <header class="menu black">
+            <span class="logo">Viajes Molones</span>
+            <div class="right">
+                <div class="items">
+                    <span class="clikable home"><a href="#inicio">Inicio</a></span>
+                    <span class="clikable"><a href="#nosotros">Nosotros</a></span>
+                    <span class="clikable"><a href="#descubre">Descubre</a></span>
+                    <span class="clikable"><a href="#lugares">Lugares</a></span>
+                </div>
+                <div class="clikable open-menu" onclick=showNav()><img src="img/function-line.svg"></div>
+            </div>
+        </header>
+
+        <nav>
+            <div class="clikable close-menu" onclick=hideNav()><img src="img/close-line.svg"></div>
+            <ul>
+                <li><a href="#inicio" onclick=hideNav()>INICIO</a></li>
+                <li><a href="#nosotros" onclick=hideNav()>NOSOTROS</a></li>
+                <li><a href="#descubre" onclick=hideNav()>DESCUBRE</a></li>
+                <li><a href="#lugares" onclick=hideNav()>LUGARES</a></li>
+            </ul>
+        </nav>
+
+        <!-- Boton flotante -->
+        <a href="#inicio" class="float">
+            <img src="img/arrow-up-circle-line.svg">
+        </a>
+
+        <!--    inicio-->
+        <a id="inicio"></a>
+        <article class="inicio">
+            <div class="contenido">
+                <span class="font2">Tus próximas vacaciones</span>
+                <span class="font7">Descrubre</span>
+                <span class="font7">Lugares</span>
+                <span class="font7">Flipantes</span>
+                <span class="boton"><a href="#descubre">Adelante!</a></span>
+            </div>
+        </article>
+
+    <!--    nosotros-->
+        <a id="nosotros"></a>
+        <article class="nosotros">
+            <div class="seccion1">
+                <div class="titulo">
+                    <p>Más Información</p>
+                    <p>Sobre Lugares Flipantes</p>
+                </div>
+                <div class="descripcion">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent in convallis augue. Vestibulum dapibus ligula in auctor vulputate. Praesent sagittis a ante vestibulum ullamcorper. Sed sollicitudin, libero quis venenatis consectetur.
+                </div>
+                <span class="boton"><a href="#lugares">Reserva</a></span>
+            </div>
+            <div class="fotos">
+                <img src="img/palm1.jpg">
+                <img src="img/palm3.jpg">
+            </div>
+        </article>
+
+    <!--    Sección descubre-->
+        <a id="descubre"></a>
+        <article class="descubre">
+            <div class="titulo">
+                <p>Descubre</p>
+                <p>Sitios Increíbles</p>
+            </div>
+            <div class="slider">
+                <div class="foto">
+                    <img src="img/flamenco.jpg" alt="">
+                    <p class="texto">playa</p>
+                </div>
+                <div class="foto">
+                    <img src="img/playa2.jpg" alt="">
+                    <p class="texto">sombrillas</p>
+                </div>
+                <div class="foto">
+                    <img src="img/playa1.jpg" alt="">
+                    <p class="texto">flamenco</p>
+                </div>
+                <div class="foto">
+                    <img src="img/palm2.jpg" alt="">
+                    <p class="texto">palmeras</p>
+                </div>
+            </div>
+<!--            Botones para controlar la navegación del slider -- MEJORA!!!-->
+            <div class="control">
+                <img class="prev" src="img/previous_icon.svg">
+                <img class="play control-hide" src="img/play_icon.svg">
+                <img class="pause" src="img/pause_icon.svg">
+                <img class="next" src="img/next_icon.svg">
+            </div>
+        </article>
+
+    <!--    lugares-->
+        <a id="lugares"></a>
+        <article class="lugares">
+            <div class="titulo">
+                Elige Tu Destino
+            </div>
+            <div class="fotos">
+                <div class="destino clikable" onclick="showDetalleLugar('detalleLloret')">
+                    <img src="img/place1.jpg">
+                    <div class="data puntuacion">
+                        <img src="img/star-line.svg">
+                        4,8
+                    </div>
+                    <span class="data nombre">Lloret</span>
+                    <span class="data precio">€3000</span>
+                </div>
+                <div class="destino clikable" onclick="showDetalleLugar('detalleBenidorm')">
+                    <img src="img/place2.jpg">
+                    <div class="data puntuacion">
+                        <img src="img/star-line.svg">
+                        5,0
+                    </div>
+                    <span class="data nombre">Benidorm</span>
+                    <span class="data precio">€1599</span>
+                </div>
+                <div class="destino clikable" onclick="showDetalleLugar('detalleMiami')">
+                    <img src="img/place3.jpg">
+                    <div class="data puntuacion">
+                        <img src="img/star-line.svg">
+                        4,9
+                    </div>
+                    <span class="data nombre">Miami</span>
+                    <span class="data precio">€3499</span>
+                </div>
+                <div class="destino clikable" onclick="showDetalleLugar('detalleOropesa')">
+                    <img src="img/place4.jpg">
+                    <div class="data puntuacion">
+                        <img src="img/star-line.svg">
+                        4,8
+                    </div>
+                    <span class="data nombre">Oropesa</span>
+                    <span class="data precio">€2499</span>
+                </div>
+                <div class="destino clikable" onclick="showDetalleLugar('detalleSantillana')">
+                    <img src="img/place5.jpg">
+                    <div class="data puntuacion">
+                        <img src="img/star-line.svg">
+                        4,8
+                    </div>
+                    <span class="data nombre">Santillana</span>
+                    <span class="data precio">€1999</span>
+                </div>
+
+<!--                Modales para mostrar detalles de los lugares  -- MEJORA!!! -->
+                <div id="detalleLloret" class="modal">
+                    <div class="modal-content">
+                        <span class="close" onclick="hideDetalleLugar('detalleLloret')"><img src="img/close-line.svg"></span>
+                        <p>Lloret de Mar es un municipio catalán de la Costa Brava (España) famoso
+                            por sus playas mediterráneas. Al este se sitúa el castillo de Sant Joan,
+                            con vistas de la zona. En el centro de la localidad, la iglesia de Sant Romà
+                            ofrece ejemplos arquitectónicos tanto del gótico catalán como del modernismo
+                            <a href="https://lloretdemar.org/es" target="_blank">Ver más...</a></p>
+                    </div>
+                </div>
+                <div id="detalleBenidorm" class="modal">
+                    <div class="modal-content">
+                        <span class="close" onclick="hideDetalleLugar('detalleBenidorm')"><img src="img/close-line.svg"></span>
+                        <p>Benidorm es una ciudad y municipio español de la provincia de Alicante, en la
+                            Comunidad Valenciana. Está situada a orillas del mar Mediterráneo
+                            <a href="https://en.visitbenidorm.es/" target="_blank">Ver más...</a></p>
+                    </div>
+                </div>
+                <div id="detalleMiami" class="modal">
+                    <div class="modal-content">
+                        <span class="close" onclick="hideDetalleLugar('detalleMiami')"><img src="img/close-line.svg"></span>
+                        <p>Miami es una ciudad-puerto ubicada en el sureste de Florida,
+                            Estados Unidos, alrededor del río Miami, entre los Everglades y el
+                            océano Atlántico
+                            <a href="https://www.miamigov.com/Home" target="_blank">Ver más...</a></p>
+                    </div>
+                </div>
+                <div id="detalleOropesa" class="modal">
+                    <div class="modal-content">
+                        <span class="close" onclick="hideDetalleLugar('detalleOropesa')"><img src="img/close-line.svg"></span>
+                        <p>Oropesa del Mar es un municipio de la Comunidad Valenciana, España.
+                            Situado en la costa de la provincia de Castellón, en la comarca de la Plana Alta.
+                            <a href="http://www.oropesadelmar.es/" target="_blank">Ver más...</a></p>
+                    </div>
+                </div>
+                <div id="detalleSantillana" class="modal">
+                    <div class="modal-content">
+                        <span class="close" onclick="hideDetalleLugar('detalleSantillana')"><img src="img/close-line.svg"></span>
+                        <p>Santillana del Mar es un municipio y una villa de la comunidad autónoma de Cantabria.
+                            Se encuentra en la costa occidental de Cantabria, comarca de la que es su extremo este
+                            <a href="https://www.turismodecantabria.com/descubrela/municipios/17-santillana-del-mar" target="_blank">Ver más...</a></p>
+                    </div>
+                </div>
+            </div>
+        </article>
+    <!--    footer-->
+        <footer>
+            <div class="footer-seccion">
+                <span class="titulo-footer">Viajes Molones</span>
+                <a href="#nosotros">Flipa y reflipa con nuestros destinos.</a>
+            </div>
+            <div class="footer-seccion">
+                <span class="titulo-footer">About</span>
+                <a href="#inicio">Inicio</a>
+                <a href="#descubre">Descubre</a>
+                <a href="#lugares">Lugares</a>
+            </div>
+        </footer>
+    </main>
+    <script src="menu.js"></script>
+    <script src="lugares.js"></script>
+    <script src="carrusel.js"></script>
+</body>
+
+</html>
